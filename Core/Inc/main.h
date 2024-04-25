@@ -49,6 +49,8 @@ extern "C" {
 
 /* USER CODE END EM */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -69,14 +71,24 @@ void Error_Handler(void);
 #define touch4_Pin GPIO_PIN_4
 #define touch4_GPIO_Port GPIOA
 #define touch4_EXTI_IRQn EXTI4_IRQn
-#define LED1_Pin GPIO_PIN_12
-#define LED1_GPIO_Port GPIOB
-#define LED2_Pin GPIO_PIN_13
-#define LED2_GPIO_Port GPIOB
-#define LED3_Pin GPIO_PIN_14
-#define LED3_GPIO_Port GPIOB
-#define LED4_Pin GPIO_PIN_15
+#define touch5_Pin GPIO_PIN_5
+#define touch5_GPIO_Port GPIOA
+#define touch5_EXTI_IRQn EXTI9_5_IRQn
+#define touch6_Pin GPIO_PIN_6
+#define touch6_GPIO_Port GPIOA
+#define touch6_EXTI_IRQn EXTI9_5_IRQn
+#define LED6_Pin GPIO_PIN_12
+#define LED6_GPIO_Port GPIOB
+#define LED5_Pin GPIO_PIN_13
+#define LED5_GPIO_Port GPIOB
+#define LED4_Pin GPIO_PIN_14
 #define LED4_GPIO_Port GPIOB
+#define LED3_Pin GPIO_PIN_15
+#define LED3_GPIO_Port GPIOB
+#define LED2_Pin GPIO_PIN_8
+#define LED2_GPIO_Port GPIOA
+#define LED1_Pin GPIO_PIN_9
+#define LED1_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 
